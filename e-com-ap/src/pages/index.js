@@ -7,10 +7,11 @@ import Hero from '../../components/Hero'
 import FeaturedProduct from '../../components/FeaturedProduct'
 import Footer from '../../components/Footer'
 import Categories from '../../components/Categories'
+import axios from 'axios'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export default function Home({ featuredProducts}) {
   return (
     
     <>
@@ -24,7 +25,7 @@ export default function Home() {
         <Navbar />
         <Hero />
         <Categories />
-        <FeaturedProduct />
+        <FeaturedProduct products={featuredProducts} />
         <Footer />
       </>
       </>
@@ -34,10 +35,17 @@ export default function Home() {
 
 
 // export async function getServerSideProps(){
-    
+//     const {data} = await axios.get(`http://localhost:3000/api/products`)
+
+//     return {
+//       props:{
+//         featuredProducts:data
+//       }
+//     }
 // }
 
 
 
 //username123
 //NsRSl6snflzxPsYB
+//mongodb+srv://username123:username123@cluster0.qs3efch.mongodb.net/?retryWrites=true&w=majority
