@@ -1,11 +1,11 @@
 import React from 'react'
 import ProductItem from './ProductItem'
 
-const FeaturedProduct = ({products}) => {
+const FeaturedProducts = ({ products }) => {
   return (
-    <div>
-      <div>
-        <h2>Featured Products</h2>
+    <div className='h-full w-full justify-center mt-[20rem]'>
+      <div className='h-full w-10/12 max-auto'>
+        <h2 className='mb-8 text-3xl text-[#333]'>Featured Products</h2>
         <div className='grid grid-cols-3 gap-16'>
             {products?.map((product) =>(
                 <ProductItem key={product._id} product={product}/>
@@ -16,5 +16,5 @@ const FeaturedProduct = ({products}) => {
   )
 }
 
-export default FeaturedProduct
+export default FeaturedProducts
 

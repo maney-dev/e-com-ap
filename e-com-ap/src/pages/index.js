@@ -8,10 +8,9 @@ import FeaturedProduct from '../../components/FeaturedProduct'
 import Footer from '../../components/Footer'
 import Categories from '../../components/Categories'
 import axios from 'axios'
-
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home({ featuredProducts}) {
+export default function Home({ featuredProducts }) {
   return (
     
     <>
@@ -33,19 +32,12 @@ export default function Home({ featuredProducts}) {
 }
 
 
+export async function getServerSide(){
+  const {data} = await axios.get(`http://localhost:3000/api/products`)
 
-// export async function getServerSideProps(){
-//     const {data} = await axios.get(`http://localhost:3000/api/products`)
-
-//     return {
-//       props:{
-//         featuredProducts:data
-//       }
-//     }
-// }
-
-
-
-//username123
-//NsRSl6snflzxPsYB
-//mongodb+srv://username123:username123@cluster0.qs3efch.mongodb.net/?retryWrites=true&w=majority
+  return {
+    props: {
+      featuredProducts: data
+    }
+  }
+}

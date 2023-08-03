@@ -3,25 +3,29 @@ import mongoose from "mongoose";
 const ProductSchema = new mongoose.Schema({
     name: {
         type: String,
-        required: true,
+        required: true
     },
-    description: {
+    desc: {
         type: String,
-        required: true,
+        required: true
     },
     category: {
         type: String,
         enum: ['sunglasses', 'headphones', 'hat'],
-        required: true,
+        required: true
     },
     price: {
         type: Number,
-        required: true,
+        required: true
     },
-    featured:{
+    image: {
+        type: String,
+        required: true
+    },
+    featured: {
         type: Boolean,
-        default: false,
+        required: false
     }
-},{timestamps: true})
+}, {timestamps: true})
 
 export default mongoose?.models?.Product || mongoose.model("Product", ProductSchema)

@@ -2,37 +2,29 @@ const data = {
     products: [
         {
             name: 'nice headphones',
-            desc: 'Sen écouteurs',
+            desc: 'lorem ipsum lorem ippppppppppppsum',
             category: "headphones",
             price: 123,
-            image: "/public/assets/headphones.jpg",
+            image: "/public/images/headphones.jpg",
             featured: true
         },
         {
             name: 'amazing sunglasses',
-            desc: 'Sen lunettes de soleil ',
+            desc: 'lorem ipsum lorem ippppppppppppsum',
             category: "sunglasses",
             price: 453,
-            image: "/public/assets/womanimg.jpg",
+            image: "/public/images/womanimg.jpg",
             featured: true
         },
         {
             name: 'beautiful hat',
-            desc: "Sen cap's ",
+            desc: 'lorem ipsum lorem ippppppppppppsum',
             category: "hat",
             price: 748,
-            image: "/public/assets/mancap.jpg",
+            image: "/public/images/mancap.jpg",
             featured: true
         },
     ],
 }
 
 export default data
-
-
-//MONGO_URL=mongodb+srv://username123:NsRSl6snflzxPsYB@cluster0.p6lic76.mongodb.net/e-com-app
-
-
-
-
-//mongodb+srv://maneyoussouphniagabaily17:UTXRBZlmjyOM2V6W@cluster0.zfi05y3.mongodb.net/?retryWrites=true&w=majority
