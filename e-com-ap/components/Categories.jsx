@@ -33,4 +33,6 @@ const Categories = () => {
   )
 }
 
+// {homes.map(home => <div>{home.name}</div>)}
+
 export default Categories
