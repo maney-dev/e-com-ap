@@ -2,6 +2,21 @@ import React from 'react'
 import ProductItem from './ProductItem'
 
 const FeaturedProducts = ({ products }) => {
+
+  // useEffect(() => {
+  //   const getProd = async () => {
+  //     try {
+  //       const response = await axios.get('http://localhost:3000/api/products');
+  //       console.log(response);
+  //       const myProd = response.data;
+  //       getProd(myProd);
+  //     } catch (error) {
+  //       console.log(error)
+  //     }
+  //   };
+  //   getProd(products)
+  // }, [])
+
   return (
     <div className='h-full w-full flex justify-center mt-[20rem] '>
       <div className='h-full w-10/12 mx-auto'>

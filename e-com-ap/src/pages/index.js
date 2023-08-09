@@ -11,6 +11,7 @@ import axios from 'axios'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home({ featuredProducts }) {
+  console.log({featuredProducts});
   return (
     
     <>
@@ -32,12 +33,13 @@ export default function Home({ featuredProducts }) {
 }
 
 
-export async function getServerSide(){
+export async function getServerSideProps(){
   const {data} = await axios.get(`http://localhost:3000/api/products`)
-
+  // console.log({data})
   return {
     props: {
       featuredProducts: data
     }
   }
 }
+

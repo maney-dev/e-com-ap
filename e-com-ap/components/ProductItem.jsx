@@ -4,11 +4,15 @@ import React from 'react'
 
 const ProductItem = ({ product }) => {
   
+  
+
   return (
+    
     <Link href={`/product/${product._id}`} className="no-underline shadow-lg p-5 hover:shadow-xl transition-all">
       <div>
         <div>
-          <Image src={product.image} width='500' height='500' alt=""/>
+          <Image src={product.image} width='500' height='500' alt=""/> 
+          {/* .slice(7) */}
         </div>
         <div className='flex items-center justify-center flex-col gap-2'>
           <h3 className='text-orange-500 text-2xl capitalize mt-4'>{product.name}</h3>
@@ -17,6 +21,7 @@ const ProductItem = ({ product }) => {
         </div>
       </div>
     </Link>
+
   )
 }
 
