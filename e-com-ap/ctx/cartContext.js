@@ -2,16 +2,16 @@ import { createContext, useContext, useState } from "react";
 
 const cartContext = createContext()
 
-export const CartProvider = ({children}) =>{
+export const CartProvider = ({children}) => {
     const [cartItems, setCartItems] = useState([])
     const [isCartOpen, setIsCartOpen] = useState(false)
 
-    const toggleCart = () =>{
-        setIsCartOpen(prev, !prev)
+    const toggleCart = () => {
+        setIsCartOpen(prev => !prev)
     }
 
     const addToCart = (newItem) => {
-        setCartItems(prev =>{
+        setCartItems(prev => {
             const itemExists = cartItems.find((item) => item._id === newItem._id)
 
             if(itemExists){
@@ -22,15 +22,15 @@ export const CartProvider = ({children}) =>{
                 })
 
                 return newArray
-            } else{
-                return [... prev, newItem]
+            } else {
+                return [...prev, newItem]
             }
         })
     }
 
     const removeCartItem = (cartItem) => {
         setCartItems((prev) => {
-            return prev.filter((item) => item._id !== cartItem._id ) 
+            return prev.filter((item) => item._id !== cartItem._id)
         })
     }
 
