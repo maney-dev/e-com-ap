@@ -1,11 +1,9 @@
 import React from 'react'
 
-const success = () => {
+const Success = () => {
   return (
-    <div className='text-center mt-12 text-3xl'>
-      Your are successfully payed with card!
-    </div>
+    <div className="text-center mt-12 text-3xl">Vous avez été payé avec succès par carte !</div>
   )
 }
 
-export default success
+export default Success
