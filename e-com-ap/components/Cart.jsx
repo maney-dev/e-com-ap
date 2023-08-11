@@ -4,7 +4,7 @@ import Image from 'next/image'
 import React from 'react'
 import { AiOutlineClose } from 'react-icons/ai'
 import { useCartContext } from '../ctx/cartContext'
-import StripeCheckout from 'react-stripe-checkout';
+// import StripeCheckout from 'react-stripe-checkout';
 
 
 const Cart = () => {
