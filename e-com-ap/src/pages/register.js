@@ -13,7 +13,7 @@ const Register = () => {
 
     return (
         <div className='bg-orange-500 h-screen w-screen flex justify-center items-center'>
-            <div className="h-[55vh] w-[25vw] border border-orange-600 rounded-xl">
+            <div className="h-[50vh] w-[25vw] border border-orange-600 rounded-xl">
                 <h2 className="text-center mt-6 text-2xl text-[#efefef]">Register</h2>
                 <form onSubmit={(e) => handleRegister(e, data)} className="flex flex-col gap-6 items-center my-10">
                     <input className="pl-2 rounded-md placeholder:text-[15px] " onChange={handleChange} type="text" name="username" placeholder='Username' />

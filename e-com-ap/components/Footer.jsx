@@ -7,25 +7,33 @@ const Footer = () => {
         {/* colum*/}
         <div className='flex flex-col gap-4'>
           <h2 className='text-2xl  mb-8 text-orange-600'>FAQ</h2>
-          <span>We are based</span>
-          <span>How we operate</span>
-          <span>Refund policy</span>
+          <span>Nous sommes basés</span>
+          <span>Comment nous fonctionnons</span>
+          <span>Politique de remboursement</span>
         </div>
         {/* colum*/}
         <div className='flex flex-col gap-4'>
           <h2 className='text-2xl mb-8 text-orange-600'>Contacts</h2>
-          <span>Facebook: SenBoutikShop</span>
-          <span>WhatsApp: SenBoutikShop</span>
-          <span>Instagram: SenBoutikShop</span>
+          <span>Facebook: SenShop</span>
+          <span>WhatsApp: SenShop</span>
+          <span>Instagram: SenShop</span>
         </div>
         {/* colum*/}
         <div className='flex flex-col gap-4'>
-          <h2 className='text-2xl mb-8 text-orange-600'>Privacy</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Voluptate officia neque modi, nihil harum blanditiis alias ab minima natus maxime est? 
-            Debitis suscipit perspiciatis voluptatem inventore aperiam necessitatibus iste.
-            Tempore.
-          </p>
+          <h2 className='text-2xl mb-8 text-orange-600'>Confidentialité</h2>
+          <div className='gap-30'>
+            <p>
+              Les droits à la protection de vos informations – L'essentiel des Règles de confidentialité ainsi que des conditions d'utilisation de vos informations par <span className='text-orange-600'>SenShop</span>
+            </p>
+            <ul>
+              <li>
+                  <p>
+                  Dans le cadre de son activité de vente en ligne SenShop est amené à traiter des informations vous concernant.
+                  Par exemple, en remplissant un formulaire d'inscription, en achetant une formation, en vous à un événement que nous organisons, en participant à une formation, en naviguant sur nos sites Internet ou nos applications mobiles et numériques, vous nous transmettez des informations dont certaines sont de nature à vous identifier (« données personnelles »)
+                  </p>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>

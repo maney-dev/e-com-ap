@@ -13,7 +13,7 @@ const Login = () => {
 
     return (
         <div className="bg-orange-400 h-screen w-screen flex justify-center items-center">
-            <div className="h-[50vh] w-[20vw] border border-orange-600 rounded-xl">
+            <div className="h-[45vh] w-[20vw] border border-orange-600 rounded-xl">
                 <h2 className="text-center mt-6 text-2xl text-[#efefef]">Login</h2>
                 <form className="flex flex-col gap-6 items-center my-10" onSubmit={(e) => handleLogin(e, data)}>
                     <input onChange={handleChange} className="pl-2 rounded-md placeholder:text-[15px]" type="email" name="email" placeholder='Email...' />

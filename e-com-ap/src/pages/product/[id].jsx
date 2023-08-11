@@ -33,7 +33,7 @@ const ProductDetails = ({ product }) => {
                         </div>
                         {/* right */}
                         <div className='flex-1 flex flex-col gap-8'>
-                            <h2 className='text-[20px] text-[#333]'>Name of Product: <span className='text-orange-500 ml-2'>{product?.name}</span></h2>
+                            <h2 className='text-[20px] text-[#333]'>Nom du Produit: <span className='text-orange-500 ml-2'>{product?.name}</span></h2>
                             <span className='text-[20px] flex items-center gap-4'>Category: <span className='px-4 py-2 text-[#efefef] text-[16px] bg-orange-500 rounded-xl'>{product?.category}</span></span>
                             <p className='text-[20px] text-[#333]'>Description: <span className='text-orange-500 ml-2 text-ellipsis'>{product?.desc}</span></p>
                             <div className='flex gap-6 items-center'>
@@ -41,7 +41,7 @@ const ProductDetails = ({ product }) => {
                                 <span>{quantity}</span>
                                 <span onClick={() => addQuantity('inc')} className='bg-slate-300 px-4 py-2 text-[18px]'>+</span>
                             </div>
-                            <span className="text-[20px] text-[#333]">Price: <span className='text-orange-500 ml-2'>${product?.price}</span></span>
+                            <span className="text-[20px] text-[#333]">Prix: <span className='text-orange-500 ml-2'>${product?.price}</span></span>
                             <button onClick={() => addToCart({...product, quantity})} className="mt-auto py-2 px-5 rounded-lg flex items-center gap-4 bg-orange-400 text-[#efefef] max-w-max hover:bg-orange-500 transition-all">Add to Cart <AiFillShopping /></button>
                         </div>
                     </div>

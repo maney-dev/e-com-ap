@@ -14,11 +14,11 @@ const Navbar = () => {
             <div className='h-full w-10/12 my-auto flex justify-between items-center'>
                 {/* left */}
                 <h2 className='text-3xl'>
-                    <Link href='/'>ManéShop</Link>
+                    <Link href='/'>SenShop</Link>
                 </h2>
                 {/* center */}
                 <ul className='flex justify-center items-center gap-6 text-[#efefef] text-[18px]'>
-                    <li className='cursor-pointer transition-all hover:text-[#efefefe6]'>Home</li>
+                    <li className='cursor-pointer transition-all hover:text-[#efefefe6]'><Link href='/'>Home</Link></li>
                     <li className='cursor-pointer transition-all hover:text-[#efefefe6]'>Hero</li>
                     <li className='cursor-pointer transition-all hover:text-[#efefefe6]'>Categories</li>
                     <li className='cursor-pointer transition-all hover:text-[#efefefe6]'>Featured</li>

@@ -1,18 +1,18 @@
 import User from "../../../../models/User";
 import bcrypt from 'bcrypt'
-import { Jwt } from "jsonwebtoken";
+import jwt from "jsonwebtoken";
 
-export default async function handler(req, res){
-    if(req.method === 'POST'){
+export default async function handler(req, res) {
+    if (req.method === 'POST') {
         try {
-            const {email, password} = req.body
+            const { email, password } = req.body
             const userExists = await User.findOne({ email })
 
             if(userExists){
-                return res.status(500).json({msg: 'User already exists'})
-            }
+                return res.status(500).json({msg: "L'utilisateur existe déjà"})
+            } 
 
-            const hashedPassword = await bcrypt.hash(req.body.password, 10)
+            const hashedPassword = await bcrypt.hash(password, 10)
 
             const savedUser = await User.create({...req.body, password: hashedPassword})
 
@@ -26,5 +26,3 @@ export default async function handler(req, res){
         }
     }
 }
-
-// secret123
