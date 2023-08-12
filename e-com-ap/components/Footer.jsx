@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className='h-full w-full justify-center mt-[10rem] pb-12'>
+    <footer className='h-full w-full justify-center mt-[10rem] pb-12 ml-20'>
       <div className='h-full w-10/12 grid grid-cols-3 justify-between'>
         {/* colum*/}
         <div className='flex flex-col gap-4'>
