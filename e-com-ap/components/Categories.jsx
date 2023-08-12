@@ -1,9 +1,9 @@
 import Link from 'next/link'
 import React from 'react'
 import Image from 'next/image'
-import img1 from '../public/assets/woman2.jpg'
-import img2 from '../public/assets/headphones.jpg'
-import img3 from '../public/assets/mancap.jpg'
+import img1 from '../public/assets/sungulassesw.png'
+import img2 from '../public/assets/headphoness.jpg'
+import img3 from '../public/assets/womancap.jpg'
 
 const Categories = () => {
   return (
